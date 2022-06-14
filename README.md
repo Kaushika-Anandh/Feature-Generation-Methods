@@ -147,7 +147,8 @@ We shall use our Encoded dataset to perform scaling:
 ```python
 from sklearn.preprocessing import MaxAbsScaler
 sc2=MaxAbsScaler()
-df4=pd.DataFrame(sc2.fit_transform(df),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
+df4=pd.DataFrame(sc2.fit_transform(df),columns=
+['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df4
 ```
 ![](7.PNG)
@@ -160,7 +161,8 @@ In  min-max you will subtract the minimum value in the dataset with all the valu
 ```python
 from sklearn.preprocessing import MinMaxScaler
 sc=MinMaxScaler()
-df2=pd.DataFrame(sc.fit_transform(df),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
+df2=pd.DataFrame(sc.fit_transform(df),columns=
+['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df2
 ```
 ![](9.PNG)
@@ -173,7 +175,8 @@ This will make sure that all the features are centred around the mean value with
 ```python
 from sklearn.preprocessing import StandardScaler
 sc1=StandardScaler()
-df3=pd.DataFrame(sc1.fit_transform(df),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
+df3=pd.DataFrame(sc1.fit_transform(df),columns=
+['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df3
 ```
 ![](11.PNG)
@@ -188,7 +191,8 @@ This method centres the median value at zero and this method is robust to outlie
 ```python
 from sklearn.preprocessing import RobustScaler
 sc3=RobustScaler()
-df5=pd.DataFrame(sc3.fit_transform(df),columns=['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
+df5=pd.DataFrame(sc3.fit_transform(df),columns=
+['id', 'bin_1', 'bin_2', 'City', 'Ord_1','Ord_2','Target'])
 df5
 ```
 ![](13.PNG)
